@@ -1,0 +1,16 @@
+{
+    "name": "mh/collection",
+    "description": "My toolbox",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Holm",
+            "email": "hollo@hollo.dk"
+        }
+    ],
+    "require": {
+        "mh/tenderseo-api": "^1.0",
+        "mh/imagetastic": "^1.0"
+    }
+}
