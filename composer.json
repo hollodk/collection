@@ -12,6 +12,7 @@
     "require": {
         "mh/tenderseo-api": "^1.0",
         "mh/imagetastic": "^1.0",
+        "mh/translator": "^1.0",
         "cocur/slugify": "^3.2"
     }
 }
