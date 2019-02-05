@@ -13,6 +13,7 @@
         "mh/tenderseo-api": "^1.0",
         "mh/imagetastic": "^1.0",
         "mh/translator": "^1.0",
-        "cocur/slugify": "^3.2"
+        "cocur/slugify": "^3.2",
+        "geoip2/geoip2": "^2.9"
     }
 }
