@@ -15,6 +15,7 @@
         "mh/translator": "^1.0",
         "cocur/slugify": "^3.2",
         "geoip2/geoip2": "^2.9",
-        "torann/json-ld": "^0.0.15"
+        "torann/json-ld": "^0.0.15",
+        "euskadi31/opengraph": "^1.0"
     }
 }

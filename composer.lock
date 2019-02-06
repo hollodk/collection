@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f4e473e137564801928ef46ea03f1a2",
+    "content-hash": "0f067c85ac9b2158d704e8de98e27ec2",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -126,6 +126,52 @@
                 "tls"
             ],
             "time": "2019-01-28T09:30:10+00:00"
+        },
+        {
+            "name": "euskadi31/opengraph",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/euskadi31/Opengraph.git",
+                "reference": "35645b1bbe9309f8b46734e3eb8f01e6613aeb52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/euskadi31/Opengraph/zipball/35645b1bbe9309f8b46734e3eb8f01e6613aeb52",
+                "reference": "35645b1bbe9309f8b46734e3eb8f01e6613aeb52",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "atoum/atoum": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Opengraph": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Axel Etcheverry",
+                    "email": "axel@etcheverry.biz",
+                    "homepage": "http://www.axel-etcheverry.com"
+                }
+            ],
+            "description": "A PHP 5.3+ framework for OpenGraph Protocol",
+            "keywords": [
+                "OpenGraph Protocol",
+                "og",
+                "opengraph",
+                "sdk"
+            ],
+            "time": "2013-11-25T14:33:37+00:00"
         },
         {
             "name": "firebase/php-jwt",
