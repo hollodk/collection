@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd598f1cbb36f0c95e92d3f3cc949a5d",
+    "content-hash": "5f4e473e137564801928ef46ea03f1a2",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -1139,6 +1139,57 @@
                 "uri"
             ],
             "time": "2017-06-14T03:57:53+00:00"
+        },
+        {
+            "name": "torann/json-ld",
+            "version": "0.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Torann/json-ld.git",
+                "reference": "fbcdb4186cd8c4d25e62f065248aa113453f0c58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Torann/json-ld/zipball/fbcdb4186cd8c4d25e62f065248aa113453f0c58",
+                "reference": "fbcdb4186cd8c4d25e62f065248aa113453f0c58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonLd\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Stainback",
+                    "email": "daniel@lyften.com"
+                }
+            ],
+            "description": "Extremely simple JSON-LD markup generator.",
+            "keywords": [
+                "JSON-LD",
+                "generator",
+                "schema",
+                "structured-data"
+            ],
+            "time": "2019-01-16T15:59:07+00:00"
         }
     ],
     "packages-dev": [],
