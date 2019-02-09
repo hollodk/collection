@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f067c85ac9b2158d704e8de98e27ec2",
+    "content-hash": "3420afa4078ccbb1589a55284e1168bf",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -320,16 +320,16 @@
         },
         {
             "name": "google/cloud-core",
-            "version": "v1.25.1",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-core.git",
-                "reference": "106c78d25b14f55167338d71737507be2bf8400c"
+                "reference": "ea5ac30e4120b48a92494b1de2c5230926f8c171"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/106c78d25b14f55167338d71737507be2bf8400c",
-                "reference": "106c78d25b14f55167338d71737507be2bf8400c",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/ea5ac30e4120b48a92494b1de2c5230926f8c171",
+                "reference": "ea5ac30e4120b48a92494b1de2c5230926f8c171",
                 "shasum": ""
             },
             "require": {
@@ -376,24 +376,24 @@
                 "Apache-2.0"
             ],
             "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
-            "time": "2018-12-18T18:55:23+00:00"
+            "time": "2019-02-06T21:40:58+00:00"
         },
         {
             "name": "google/cloud-translate",
-            "version": "v1.2.7",
+            "version": "v1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-translate.git",
-                "reference": "cf0e3fd50661ae421112657013881c3ca5cfce94"
+                "reference": "db30f652b8eb3944f85849b159c096585285ff54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-translate/zipball/cf0e3fd50661ae421112657013881c3ca5cfce94",
-                "reference": "cf0e3fd50661ae421112657013881c3ca5cfce94",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-translate/zipball/db30f652b8eb3944f85849b159c096585285ff54",
+                "reference": "db30f652b8eb3944f85849b159c096585285ff54",
                 "shasum": ""
             },
             "require": {
-                "google/cloud-core": "^1.23"
+                "google/cloud-core": "^1.26"
             },
             "require-dev": {
                 "erusev/parsedown": "^1.6",
@@ -420,7 +420,7 @@
                 "Apache-2.0"
             ],
             "description": "Cloud Transation Client for PHP",
-            "time": "2018-10-29T16:21:18+00:00"
+            "time": "2019-02-06T21:40:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -805,17 +805,72 @@
             "time": "2019-02-05T14:02:51+00:00"
         },
         {
-            "name": "mh/tenderseo-api",
-            "version": "1.0.4",
+            "name": "mh/json-ld",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hollodk/tenderseo-api.git",
-                "reference": "26e1d7d5a969856b51b02d22d3d493fb2ee2e124"
+                "url": "https://github.com/hollodk/json-ld.git",
+                "reference": "d65c6d84eef463434431c398f31e345a55a66185"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hollodk/tenderseo-api/zipball/26e1d7d5a969856b51b02d22d3d493fb2ee2e124",
-                "reference": "26e1d7d5a969856b51b02d22d3d493fb2ee2e124",
+                "url": "https://api.github.com/repos/hollodk/json-ld/zipball/d65c6d84eef463434431c398f31e345a55a66185",
+                "reference": "d65c6d84eef463434431c398f31e345a55a66185",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonLd\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Stainback",
+                    "email": "daniel@lyften.com"
+                },
+                {
+                    "name": "Michael Holm",
+                    "email": "hollo@hollo.dk"
+                }
+            ],
+            "description": "Extremely simple JSON-LD markup generator.",
+            "keywords": [
+                "JSON-LD",
+                "generator",
+                "schema",
+                "structured-data"
+            ],
+            "time": "2019-02-09T17:35:39+00:00"
+        },
+        {
+            "name": "mh/tenderseo-api",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hollodk/tenderseo-api.git",
+                "reference": "8f5f6f6f32d75c034380f76a24f371614f2ae52a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hollodk/tenderseo-api/zipball/8f5f6f6f32d75c034380f76a24f371614f2ae52a",
+                "reference": "8f5f6f6f32d75c034380f76a24f371614f2ae52a",
                 "shasum": ""
             },
             "require": {
@@ -840,8 +895,8 @@
                 }
             ],
             "description": "TenderSEO api class",
-            "homepage": "https://github.com/hollodk/tenderseo-api",
-            "time": "2019-02-01T14:11:06+00:00"
+            "homepage": "https://www.tenderseo.com",
+            "time": "2019-02-07T08:42:34+00:00"
         },
         {
             "name": "mh/translator",
@@ -1185,57 +1240,6 @@
                 "uri"
             ],
             "time": "2017-06-14T03:57:53+00:00"
-        },
-        {
-            "name": "torann/json-ld",
-            "version": "0.0.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Torann/json-ld.git",
-                "reference": "fbcdb4186cd8c4d25e62f065248aa113453f0c58"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Torann/json-ld/zipball/fbcdb4186cd8c4d25e62f065248aa113453f0c58",
-                "reference": "fbcdb4186cd8c4d25e62f065248aa113453f0c58",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "~5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JsonLd\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Stainback",
-                    "email": "daniel@lyften.com"
-                }
-            ],
-            "description": "Extremely simple JSON-LD markup generator.",
-            "keywords": [
-                "JSON-LD",
-                "generator",
-                "schema",
-                "structured-data"
-            ],
-            "time": "2019-01-16T15:59:07+00:00"
         }
     ],
     "packages-dev": [],
