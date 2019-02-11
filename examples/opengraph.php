@@ -2,10 +2,15 @@
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-$writer = new Opengraph\Writer();
-$writer->append(Opengraph\Writer::OG_TITLE, 'The Rock');
-$writer->append(Opengraph\Writer::OG_TYPE, Opengraph\Writer::TYPE_VIDEO_MOVIE);
-$writer->append(Opengraph\Writer::OG_URL, 'http://www.imdb.com/title/tt0117500/');
-$writer->append(Opengraph\Writer::OG_IMAGE, 'http://ia.media-imdb.com/images/rock.jpg');
+use ChrisKonnertz\OpenGraph\OpenGraph;
 
-echo $writer->render() . PHP_EOL;
+$og = new OpenGraph();
+
+$og->title('Apple Cookie')
+    ->type('article')
+    ->image('http://example.org/apple.jpg')
+    ->description('Welcome to the best apple cookie recipe never created.')
+    ->url('http://www.google.com')
+    ;
+
+var_dump($og->renderTags());

@@ -6,7 +6,7 @@ This is a collection of the tools i use in most of my work
 
 Download file https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz, extract it and you got the mmdb file.
 
-```
+```php
 <?php
 
 use GeoIp2\Database\Reader;
@@ -23,7 +23,7 @@ var_dump($record->country->isoCode);
 
 Pretty cool package to support rich snippets with google
 
-```
+```php
 $context = \JsonLd\Context::create('local_business', [
     'name' => 'Consectetur Adipiscing',
     'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
@@ -48,25 +48,29 @@ echo $context; // Will output the script tag
 
 Remember to add open graph support as well
 
-```
+```php
 <?php
 
-require_once(__DIR__.'/vendor/autoload.php');
+require_once(__DIR__.'/../vendor/autoload.php');
 
-$writer = new Opengraph\Writer();
-$writer->append(Opengraph\Writer::OG_TITLE, 'The Rock');
-$writer->append(Opengraph\Writer::OG_TYPE, Opengraph\Writer::TYPE_VIDEO_MOVIE);
-$writer->append(Opengraph\Writer::OG_URL, 'http://www.imdb.com/title/tt0117500/');
-$writer->append(Opengraph\Writer::OG_IMAGE, 'http://ia.media-imdb.com/images/rock.jpg');
+use ChrisKonnertz\OpenGraph\OpenGraph;
 
-echo $writer->render() . PHP_EOL;
+$og = new OpenGraph();
+$og->title('Apple Cookie')
+    ->type('article')
+    ->image('http://example.org/apple.jpg')
+    ->description('Welcome to the best apple cookie recipe never created.')
+    ->url('http://www.google.com')
+    ;
+
+var_dump($og->renderTags());
 ```
 
 ## Social Share Url
 
 Add easy integration with share on social medias
 
-```
+```php
 <?php
 
 require_once(__DIR__.'/vendor/autoload.php');

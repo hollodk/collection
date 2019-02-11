@@ -4,8 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfb69c1f594c04e2bef3ad97a4fbb058",
+    "content-hash": "724b0350ca18b1ebcff9b23d52f6fcb4",
     "packages": [
+        {
+            "name": "chriskonnertz/open-graph",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chriskonnertz/open-graph.git",
+                "reference": "075ef67c23b39fdbd6ca32d0c4e4bc4544a7eb75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chriskonnertz/open-graph/zipball/075ef67c23b39fdbd6ca32d0c4e4bc4544a7eb75",
+                "reference": "075ef67c23b39fdbd6ca32d0c4e4bc4544a7eb75",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.7"
+            },
+            "require-dev": {
+                "nesbot/carbon": "~1.14"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ChrisKonnertz\\OpenGraph\\OpenGraphServiceProvider"
+                    ],
+                    "aliases": {
+                        "OpenGraph": "ChrisKonnertz\\OpenGraph\\OpenGraphFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ChrisKonnertz\\OpenGraph": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Konnertz"
+                }
+            ],
+            "description": "Class that assists in building Open Graph meta tags",
+            "keywords": [
+                "laravel",
+                "laravel4",
+                "laravel5",
+                "ogp",
+                "open graph",
+                "opengraph"
+            ],
+            "time": "2018-12-30T12:02:50+00:00"
+        },
         {
             "name": "cocur/slugify",
             "version": "v3.2",
