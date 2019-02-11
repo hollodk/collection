@@ -13,9 +13,10 @@
         "mh/tenderseo-api": "^1.0",
         "mh/imagetastic": "^1.0",
         "mh/translator": "^1.0",
+        "mh/json-ld": "^1.0",
         "cocur/slugify": "^3.2",
         "geoip2/geoip2": "^2.9",
-        "mh/json-ld": "^1.0",
-        "euskadi31/opengraph": "^1.0"
+        "euskadi31/opengraph": "^1.0",
+        "drmonkeyninja/social-share-url": "^1.2"
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3420afa4078ccbb1589a55284e1168bf",
+    "content-hash": "dfb69c1f594c04e2bef3ad97a4fbb058",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -126,6 +126,49 @@
                 "tls"
             ],
             "time": "2019-01-28T09:30:10+00:00"
+        },
+        {
+            "name": "drmonkeyninja/social-share-url",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drmonkeyninja/social-share-url.git",
+                "reference": "bd8aac70edf2fa87ff62c1f0854c40deafaf4b9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drmonkeyninja/social-share-url/zipball/bd8aac70edf2fa87ff62c1f0854c40deafaf4b9c",
+                "reference": "bd8aac70edf2fa87ff62c1f0854c40deafaf4b9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "drmonkeyninja\\SocialShareUrl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Carter",
+                    "homepage": "http://andy-carter.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "A standalone utility library for generating URLs to share content on numerous social media platforms.",
+            "keywords": [
+                "social"
+            ],
+            "time": "2018-05-02T19:48:14+00:00"
         },
         {
             "name": "euskadi31/opengraph",

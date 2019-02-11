@@ -61,3 +61,20 @@ $writer->append(Opengraph\Writer::OG_IMAGE, 'http://ia.media-imdb.com/images/roc
 
 echo $writer->render() . PHP_EOL;
 ```
+
+## Social Share Url
+
+Add easy integration with share on social medias
+
+```
+<?php
+
+require_once(__DIR__.'/vendor/autoload.php');
+
+use \drmonkeyninja\SocialShareUrl\SocialShareUrl;
+
+$SocialShareUrl = new SocialShareUrl();
+$url = $SocialShareUrl->getUrl('facebook', 'http://example.com');
+
+var_dump($url);
+```

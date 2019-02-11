@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__.'/vendor/autoload.php');
+require_once(__DIR__.'/../vendor/autoload.php');
 
 $writer = new Opengraph\Writer();
 $writer->append(Opengraph\Writer::OG_TITLE, 'The Rock');
