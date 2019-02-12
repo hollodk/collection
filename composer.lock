@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "724b0350ca18b1ebcff9b23d52f6fcb4",
+    "content-hash": "b76fc0b06bc6f2b21b21a7509e661fc4",
     "packages": [
         {
             "name": "chriskonnertz/open-graph",
@@ -957,6 +957,43 @@
                 "structured-data"
             ],
             "time": "2019-02-09T17:35:39+00:00"
+        },
+        {
+            "name": "mh/pageseo",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hollodk/pageseo.git",
+                "reference": "f98a5bb1850dfe71b78355c1ba16b1c16253e05a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hollodk/pageseo/zipball/f98a5bb1850dfe71b78355c1ba16b1c16253e05a",
+                "reference": "f98a5bb1850dfe71b78355c1ba16b1c16253e05a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PageSEO\\": "PageSEO/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Holm",
+                    "email": "hollo@hollo.dk"
+                }
+            ],
+            "description": "Nifty library to keep your SEO tags clean",
+            "homepage": "http://www.hollo.dk",
+            "time": "2019-02-12T11:26:45+00:00"
         },
         {
             "name": "mh/tenderseo-api",
