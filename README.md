@@ -9,9 +9,9 @@ Download file https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.
 ```php
 <?php
 
-use GeoIp2\Database\Reader;
-
 require_once 'vendor/autoload.php';
+
+use GeoIp2\Database\Reader;
 
 $reader = new Reader(__DIR__.'/GeoLite2-City/GeoLite2-City.mmdb');
 $record = $reader->city('84.227.20.193');
@@ -24,24 +24,29 @@ var_dump($record->country->isoCode);
 Pretty cool package to support rich snippets with google
 
 ```php
-$context = \JsonLd\Context::create('local_business', [
-    'name' => 'Consectetur Adipiscing',
-    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    'telephone' => '555-555-5555',
-    'openingHours' => 'mon,tue,fri',
-    'address' => [
-        'streetAddress' => '112 Apple St.',
-        'addressLocality' => 'Hamden',
-        'addressRegion' => 'CT',
-        'postalCode' => '06514',
+<?php
+
+$title = 'This is my awesome blog';
+$description = 'This post is about loan and good stuff';
+$url = 'http://this.blog/1';
+$author = 'this.blog';
+$publisher = $author;
+$datePublished = '2019-01-01';
+$image = 'http://this.image.url';
+
+$json = \JsonLd\Context::create('article', [
+    'headline' => $title,
+    'description' => $description,
+    'mainEntityOfPage' => $url,
+    'author' => $author,
+    'publisher' => [
+        'name' => $publisher,
     ],
-    'geo' => [
-        'latitude' => '41.3958333',
-        'longitude' => '-72.8972222',
-    ],
+    'datePublished' => $datePublished,
+    'image' => $image,
 ]);
 
-echo $context; // Will output the script tag
+echo $json;
 ```
 
 ## open graph
@@ -55,12 +60,17 @@ require_once(__DIR__.'/../vendor/autoload.php');
 
 use ChrisKonnertz\OpenGraph\OpenGraph;
 
+$title = 'This is my blog';
+$image = 'http://www.image.url';
+$description = 'This is going to happen in 2019';
+$url = 'http://this.blog.url';
+
 $og = new OpenGraph();
-$og->title('Apple Cookie')
-    ->type('article')
-    ->image('http://example.org/apple.jpg')
-    ->description('Welcome to the best apple cookie recipe never created.')
-    ->url('http://www.google.com')
+$og->type('article')
+    ->title($title)
+    ->image($image)
+    ->description($description)
+    ->url($url)
     ;
 
 var_dump($og->renderTags());
