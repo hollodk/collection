@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b76fc0b06bc6f2b21b21a7509e661fc4",
+    "content-hash": "ae54963e09f2928417aaff0d061a178c",
     "packages": [
         {
             "name": "chriskonnertz/open-graph",
@@ -225,52 +225,6 @@
                 "social"
             ],
             "time": "2018-05-02T19:48:14+00:00"
-        },
-        {
-            "name": "euskadi31/opengraph",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/euskadi31/Opengraph.git",
-                "reference": "35645b1bbe9309f8b46734e3eb8f01e6613aeb52"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/euskadi31/Opengraph/zipball/35645b1bbe9309f8b46734e3eb8f01e6613aeb52",
-                "reference": "35645b1bbe9309f8b46734e3eb8f01e6613aeb52",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "atoum/atoum": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Opengraph": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Axel Etcheverry",
-                    "email": "axel@etcheverry.biz",
-                    "homepage": "http://www.axel-etcheverry.com"
-                }
-            ],
-            "description": "A PHP 5.3+ framework for OpenGraph Protocol",
-            "keywords": [
-                "OpenGraph Protocol",
-                "og",
-                "opengraph",
-                "sdk"
-            ],
-            "time": "2013-11-25T14:33:37+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -905,16 +859,16 @@
         },
         {
             "name": "mh/json-ld",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hollodk/json-ld.git",
-                "reference": "d65c6d84eef463434431c398f31e345a55a66185"
+                "reference": "06ec5462b31d7efde59971345b54d2957820b134"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hollodk/json-ld/zipball/d65c6d84eef463434431c398f31e345a55a66185",
-                "reference": "d65c6d84eef463434431c398f31e345a55a66185",
+                "url": "https://api.github.com/repos/hollodk/json-ld/zipball/06ec5462b31d7efde59971345b54d2957820b134",
+                "reference": "06ec5462b31d7efde59971345b54d2957820b134",
                 "shasum": ""
             },
             "require": {
@@ -956,20 +910,20 @@
                 "schema",
                 "structured-data"
             ],
-            "time": "2019-02-09T17:35:39+00:00"
+            "time": "2019-02-09T18:34:42+00:00"
         },
         {
             "name": "mh/pageseo",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hollodk/pageseo.git",
-                "reference": "f98a5bb1850dfe71b78355c1ba16b1c16253e05a"
+                "reference": "d0a1f29a14b74531affbe776f2aada649f870421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hollodk/pageseo/zipball/f98a5bb1850dfe71b78355c1ba16b1c16253e05a",
-                "reference": "f98a5bb1850dfe71b78355c1ba16b1c16253e05a",
+                "url": "https://api.github.com/repos/hollodk/pageseo/zipball/d0a1f29a14b74531affbe776f2aada649f870421",
+                "reference": "d0a1f29a14b74531affbe776f2aada649f870421",
                 "shasum": ""
             },
             "require": {
@@ -993,20 +947,20 @@
             ],
             "description": "Nifty library to keep your SEO tags clean",
             "homepage": "http://www.hollo.dk",
-            "time": "2019-02-12T11:26:45+00:00"
+            "time": "2019-02-12T12:45:53+00:00"
         },
         {
             "name": "mh/tenderseo-api",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hollodk/tenderseo-api.git",
-                "reference": "8f5f6f6f32d75c034380f76a24f371614f2ae52a"
+                "reference": "8b5ea44cf6bf5cd4efbdd4a3813815f05305aafb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hollodk/tenderseo-api/zipball/8f5f6f6f32d75c034380f76a24f371614f2ae52a",
-                "reference": "8f5f6f6f32d75c034380f76a24f371614f2ae52a",
+                "url": "https://api.github.com/repos/hollodk/tenderseo-api/zipball/8b5ea44cf6bf5cd4efbdd4a3813815f05305aafb",
+                "reference": "8b5ea44cf6bf5cd4efbdd4a3813815f05305aafb",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +986,7 @@
             ],
             "description": "TenderSEO api class",
             "homepage": "https://www.tenderseo.com",
-            "time": "2019-02-07T08:42:34+00:00"
+            "time": "2019-02-12T11:50:25+00:00"
         },
         {
             "name": "mh/translator",

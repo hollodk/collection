@@ -16,7 +16,6 @@
         "mh/json-ld": "^1.0",
         "cocur/slugify": "^3.2",
         "geoip2/geoip2": "^2.9",
-        "euskadi31/opengraph": "^1.0",
         "drmonkeyninja/social-share-url": "^1.2",
         "chriskonnertz/open-graph": "^1.0",
         "mh/pageseo": "^1.0"
